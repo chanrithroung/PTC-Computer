@@ -335,8 +335,9 @@ nav > ul .cart > .drop-down > p {
 }
 
 
-.menu > ul > li > .drop-down-qr {
+.menu > ul > li.drop-down-qr {
     width: 300px;
+    height: fit-content;
     background-color: #FFFFFF;
     position: absolute;
     top: 115%; 
@@ -345,17 +346,23 @@ nav > ul .cart > .drop-down > p {
     border: 1px solid rgb(206, 205, 205);
     list-style: none;
     display: none;
-    
+    flex-direction: column;
 
 }
 
-.no-padding:hover > .drop-down-qr {
+.menu > ul li > span {
+    font-size: 15px;
+    padding: 15px;
     display: block;
-    
+}
+
+.no-padding:hover ~ .drop-down-qr {
+    display: flex;
 }
 
 .drop-down-qr > li {
     padding: 15px;
+    color: white;
 }
 
 .text-gredient {
