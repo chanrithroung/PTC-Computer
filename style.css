@@ -317,7 +317,6 @@ nav > ul .cart > .drop-down > p {
 }
 
 .menu > ul > .no-padding:hover  {
-    
     transform: scale(0.9);
 }
 
@@ -333,4 +332,57 @@ nav > ul .cart > .drop-down > p {
 
 .menu > ul > li:hover {
     background-color: rgba(212, 211, 211, 0.305);
+}
+
+
+.menu > ul > li > .drop-down-qr {
+    width: 300px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 115%; 
+    box-shadow: 0 0 8px rgba(200, 200, 200, 0.686);
+    border-radius: 15px;
+    border: 1px solid rgb(206, 205, 205);
+    list-style: none;
+    display: none;
+    
+
+}
+
+.no-padding:hover > .drop-down-qr {
+    display: block;
+    
+}
+
+.drop-down-qr > li {
+    padding: 15px;
+}
+
+.text-gredient {
+    background-image: linear-gradient(45deg, #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000);
+
+    background-size: 400%;
+    animation: text-gredient 10s linear infinite;
+    background-clip: text;
+    color: transparent;
+    /* filter: blur(10px); */
+}
+
+
+@keyframes text-gredient {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
 }
