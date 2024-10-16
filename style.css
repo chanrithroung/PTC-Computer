@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #2C376B;
+    --light: #F2F3F8;
+    --gold: #FC9700;
+    --red: #B12704;
+    
+    --clr1: #bf23bf;
+    --clr2: #17d117;
+    --clr3: #f7ae27;
+    --clr4: #09f7f7;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    justify-content: space-between;
+    background-color: var(--blue);
+}
+
+
+.contact {
+    display: flex;
+    color: white;
+    font-size: 16px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact span {
+    margin: 0 8px;
+}
+
+
+.contact span i {
+    margin: 0 5px;
+}
+
+.contact-socail {
+    font-size: 22px;
+    color: white;
+}
+
+.contact-socail span {
+    margin: 0 3px;
+}
+
+nav {
+    padding: 0 15px;
+    background-color: var(--light);
+    display: flex;
+    align-items: center;
+}
+
+nav > .logo > img{
+    height: 80px;
+}
+
+.location {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--light);
+    height: fit-content;
+    margin-left: 10px;
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.location:hover {
+    border: 1px solid white;
+}
+
+
+.location span {
+    display: block;
+    color: black;
+}
+.location span i {
+    margin-right: 5px;
+}
+
+
+
+.select-option {
+    transform: translate(5px, 0px);
+    height: 42.1875px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.select-option:focus {
+    border: 1px solid var(--gold);
+    outline: 1px solid var(--gold);
+}
+
+.form-control {
+    height: 42.1875px;
+    width: 35vw;
+    border: 1px solid gray ;
+    outline: none;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.submit {
+    padding: 0 18px;
+    height: 42.1875px;
+    background-color: var(--gold);
+    color: white;
+    outline: none;
+    border: none;
+
+}
+
+form {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+nav > ul {
+    margin-left: 15px;
+    display: flex;
+    gap: 15px;
+    
+}
+
+nav>ul>li {
+
+    list-style: none;
+    display: flex;
+    /* gap: 10px; */
+    column-gap: 10px;
+    align-items: end;
+    position: relative;
+
+    height: 50px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul > li > i.fa-arrow-turn-down {
+    transform: rotate(-90deg);
+}
+
+ul > li > i {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+
+nav>ul>li >span {
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 0;
+    padding: 0px 10px;
+    height: fit-content;
+    background-color: var(--red);
+    border-radius: 50%;
+    color: white;
+}
+
+
+nav>ul > li > img {
+    height: 30px;
+}
+
+
+nav > ul > .credential {
+    align-items: start;
+    flex-direction: column;
+}
+
+nav > ul > .credential > h5 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+nav > ul .cart > .drop-down {
+    position: absolute;
+    width: 250px;
+    height: 120px;
+    top: 130%;
+    left: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 35px;
+    background-color: #FFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: none;
+}
+
+nav > ul > .cart:hover > .drop-down {
+    display: flex;
+}
+
+nav > ul .cart > .drop-down > p {
+    font-size: 15px;
+}
+
+.menu {
+    padding: 0px 25px;
+    background-color: #ffffff;
+    position: relative;
+    /* z-index: -1; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.menu > ul {
+    display: flex;
+    gap: 5px;
+}
+
+.menu > ul > li {
+    list-style: none;
+    padding: 15px 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu > ul > .no-padding {
+    padding: 0;
+}
+
+.bordering {
+    padding: 11px 30px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    position: relative;
+    color: red;
+    /* z-index: ; */
+
+}
+
+.bordering::before, .bordering::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: calc(100% + 2px);
+    width: calc(100% + 2px);
+    background-color: #FFFFFF;
+    top: -1px;
+    left: -1px;
+    z-index: -1;
+    border-radius: 8px;
+    background-size: 400%;
+    background-image: linear-gradient(45deg, #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000);
+    animation: bordering 10s linear infinite;
+    filter: blur(5px);
+}
+
+.bordering::after {
+    filter: blur(10px);
+}
+
+
+
+
+
+@keyframes bordering {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.menu> ul > li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* position: absolute; */
+    font-size: 15px;
+    z-index: 10;
+    transition: all .3s;
+}
+
+.menu > ul > .no-padding:hover  {
+    transform: scale(0.9);
+}
+
+.menu > ul > li > i {
+    font-size: 18px;
+}
+
+.menu>ul>li > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.menu > ul > li:hover {
+    background-color: rgba(212, 211, 211, 0.305);
+}
+
+
+.menu > ul > li.drop-down-qr {
+    width: 300px;
+    height: fit-content;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 115%; 
+    box-shadow: 0 0 8px rgba(200, 200, 200, 0.686);
+    border-radius: 15px;
+    border: 1px solid rgb(206, 205, 205);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+
+}
+
+.menu > ul li > span {
+    font-size: 15px;
+    padding: 15px;
+    display: block;
+}
+
+.no-padding:hover ~ .drop-down-qr {
+    display: flex;
+}
+
+.drop-down-qr > li {
+    padding: 15px;
+    color: white;
+}
+
+.text-gredient {
+    background-image: linear-gradient(45deg, #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000);
+
+    background-size: 400%;
+    animation: text-gredient 10s linear infinite;
+    background-clip: text;
+    color: transparent;
+    /* filter: blur(10px); */
+}
+
+
+@keyframes text-gredient {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+}
