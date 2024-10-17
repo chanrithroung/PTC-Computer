@@ -19,6 +19,76 @@
 }
 
 
+body {
+    height: 200vh;
+}
+
+.computer-search {
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    border-radius: 50%;
+    position: fixed; 
+    z-index: 1;
+    bottom: 20px;
+    left: 20px;
+}
+
+.computer-search > .start-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    background-image: linear-gradient(-45deg, #543FEB, #9642EA);
+}
+
+
+.start-content > img {
+    width: 30px;
+}
+
+.computer-search::before, .computer-search::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    border-radius: 50%;
+    
+    background-image: linear-gradient(45deg, #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000);
+    top: -1.5px;
+    left: -1.5px;
+
+    background-size: 400%;
+    /* filter: blur(5px); */
+    z-index: -1;
+    animation: text-gredient 10s linear infinite;
+}
+
+.computer-search::after {
+    filter: blur(20px);
+    background-image: linear-gradient(45deg, #ff0000,
+    #ff7300a8,
+    #fffb008f,
+    #48ff0095,
+    #00ffd57a,
+    #002affa7,
+    #7b00ff92,
+    #ff00c892,
+    #ff000084);
+}
+
 header {
     display: flex;
     align-items: center;
@@ -36,6 +106,11 @@ header {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.menu-wraper {
+    position: sticky;
+    top: 0%;
 }
 
 .contact span {
@@ -476,5 +551,36 @@ nav > ul .cart > .drop-down > p {
 }
 
 .text-gredient:hover .qr-container {
+    display: block;
+}
+
+
+.menu>ul>li {
+    position: relative;
+}
+
+.drop-down-menu {
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    box-shadow: 0 0 5px rgba(134, 134, 134, 0.49);
+    display: none;
+}
+
+
+.drop-down-menu> li {
+    padding: 10px;
+    width: 250px;
+    left: 20%;
+    list-style: none;
+
+}
+
+.drop-down-menu> li:hover {
+    background-color: rgba(212, 211, 211, 0.305);
+}
+
+.menu > ul > li:hover .drop-down-menu {
     display: block;
 }
