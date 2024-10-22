@@ -11,6 +11,7 @@
     --light: #F2F3F8;
     --gold: #FC9700;
     --red: #B12704;
+    --body-color: #FEFBF7;
 
     --clr1: #bf23bf;
     --clr2: #17d117;
@@ -21,6 +22,7 @@
 
 body {
     height: 200vh;
+    background-color: var(--body-color);
 }
 
 .computer-search {
@@ -29,7 +31,7 @@ body {
     background-color: red;
     border-radius: 50%;
     position: fixed; 
-    z-index: 1;
+    z-index: 11;
     bottom: 20px;
     left: 20px;
 }
@@ -583,4 +585,66 @@ nav > ul .cart > .drop-down > p {
 
 .menu > ul > li:hover .drop-down-menu {
     display: block;
+}
+
+.client-service {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: red;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.736);
+}
+
+.client-service > i {
+    font-size: 30px;
+    color: white;
+}
+
+
+.sidebar {
+    height: 100vh;
+    width: 0px;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    left: 0%;
+    transition: all 0.5s;
+}
+
+
+
+.dark-body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.409);
+}
+
+
+
+.slider-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    padding: 0 20px;
+
+}
+
+.slider-wrapper aside {
+    width:  297px;
+    height: 100%;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.361);
 }
