@@ -42,6 +42,7 @@ body {
     display: flex;
     overflow: hidden;
     padding: 40px;
+    display: none;
 
     animation: show 1s ease-out;
 }
@@ -759,6 +760,11 @@ nav > ul .cart > .drop-down > p {
 }
 
 
+
+.drop-down-sidebar {
+    background-color: white;
+}
+
 .slider-wrapper>aside>ul>li {
    list-style: none;
    width: 100%;
@@ -770,8 +776,6 @@ nav > ul .cart > .drop-down > p {
    font-style: normal;
    position: relative;
    transition: all 0.1s;
-   
-
    
    display: flex;
    align-items: center;
@@ -854,4 +858,171 @@ nav > ul .cart > .drop-down > p {
 
 .banner-slider > .slider > img {
     height: 100%;
+}
+
+
+.customer-service {
+    margin-top: 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.customer-service > figure img {
+    height: 250px;
+    border-radius: 24px;
+}
+
+main {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.products {
+    background-color: white;
+    box-shadow: 0 0 10px rgb(204, 204, 204);
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+
+.product-header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.product-header > .promotion-count-down {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 20px;
+
+
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+
+}
+
+.promotion-count-down>span:nth-child(1) {
+    margin-left: 20px;
+}
+
+
+.promotion-count-down>span {
+    padding: 5px 10px;
+    background-color: var(--red);
+    color: white;
+
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.promotion-view > button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(35, 35, 35);
+    box-shadow: 0 3px 15px rgb(206, 206, 206);
+    background-color: var(--gold);
+    transition: all 200ms;
+}
+
+.promotion-view > button:hover {
+    color: white;
+}
+
+
+.products > .card-wrapper {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+}
+
+
+.card-wrapper > .card {
+    height: 447px;
+    width: 346px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px 0 0 0;
+    position: relative;
+    box-shadow: -5px 0 10px rgb(199, 199, 199);
+    overflow: hidden;
+}
+
+
+.card > .discount {
+    padding: 10px 15px;
+    
+    background-color: var(--red);
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 24px 0;
+
+}
+
+.locactivity {
+    width: 60px;
+    position: absolute;
+    left: 100%;
+    row-gap: 10px;
+    top: calc(50% - 60px);
+    display: flex;
+    flex-direction: column;
+}
+
+.locactivity > span {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(200, 200, 200);
+    position: absolute;
+}
+
+.locactivity > span:hover {
+    background-color: var(--red);
+    color: white;
+}
+
+.log-item {
+    left: 0;
+}
+
+.card .log-item:nth-child(1){
+    transition: all 200ms;
+    top: 0;
+}
+.card .log-item:nth-child(2){
+    transition: all 400ms;
+    top: 50px;
+}
+.card .log-item:nth-child(3){
+    transition: all 600ms;
+    top: 100px;
+}
+
+.card:hover .log-item{
+    left: -60px;
 }

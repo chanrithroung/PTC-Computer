@@ -28,3 +28,33 @@ const ads = document.querySelector('.ads');
 toggle.addEventListener('click', ()=> {
     ads.style.display = "none";
 });
+
+
+
+const countDown = document.getElementById('count-down');
+
+
+let day = 60;
+let hour = 24;
+let minute = 30;
+let seconds = 50;
+
+setInterval( ()=> {
+    if (seconds == 0) {
+        minute--;
+        seconds = 60;
+
+        if (minute == 0) {
+            hour--;
+            minute = 60;
+
+            if (hour == 0) {
+                day--;
+                hour = 24;
+            }
+        }
+    }
+    seconds--;
+    countDown.innerHTML = `Promotion <span>${day}</span> : <span>${hour}</span> : <span>${minute}</span> : <span>${seconds}</span>`
+
+}, 1000)
